@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Todo List</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.o">
+        <meta name="description" content="Free Todo app">
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="/Download/icons8-todo-list-32.png">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="settingpage.css">
+        <link rel="stylesheet" href="headcontainer.css">
+        <link rel="stylesheet" href="Todo_Input.css">
+        <link rel="stylesheet" href="Todo_container.css">
+    </head>
+    <body>
+        <div class="headcontainer">
+            <div class="conhl">
+                <ul class="headerlist">
+                    <li class="boxheader" id="boxheadertitle">
+                        <strong>ToDo
+                            <span id="boxheadertitle"></span>
+                        </strong>
+                    </li>
+                    <li class="boxheader">
+                        <button onclick="settingon()" class="setting-on-bn" id="setting-on-bn">
+                            <img src="/Download/setting_p.png" alt="Setting" style="width: 32px;height: 32px;">
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="inputform">
+            <span class="formtodo">
+                <form>
+                    <label for="fortodo"></label>
+                    <input type="text" id="fortodo" name="fortodo" placeholder="Add ToDo Thing.....">
+                </form>
+            </span>
+            <span class="formbutton">
+                <button class="addbn" id="addbn">
+                    <span class="inbtwln"></span>Add</button>
+                </span>
+        </div>
+        <div class="storagecon" id="storagecon">
+            <div class="inputtoolst" id="inputtoolst">
+                <ul class="inputtool">
+                    <li class="boxtool">Si.no</li>
+                    <li class="boxtool" id="titleContainer">
+                        <ul class="title-search" id="title-search">
+                            <li class="ts" id="tsTodo">Todo's</li>
+                            <li class="ts" id="tsbn">
+                                <button class="btn-search" id="btn-search">
+                                    <img src="/Download/search.png" style="width:25px;height:25px;" id="btn-Img-search">
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="searchContainer" id="searchContainer" style="display: none;">
+                            <input class="searchBar" type="text" id = "searchBar" name="searchBar" placeholder="Search ToDO From List">
+                            <button id = "searchBarBtn" class = "searchBarBtn">
+                                <img src="/Download/search.png" style="width:25px;height:25px;" id="Img-searchBarBtn" onclick = "searchBarText()">
+                            </button>
+                            <button id = "resetSearchBar" class = "resetSearchBar" onclick="resetSearchBar()">
+                                Reset
+                            </button>
+                        </div>
+                    </li>
+                    <li class="boxtool">Progress</li>
+                    <li class="boxtool">Action</li>
+                </ul>
+            </div>
+        </div>
+        <div class="settingpage" id="settingpage">
+<!--            <div class="signs">
+                <ul class="signslist">
+                    <li class="sign">
+                        <button class="signbn" id="singin">Sign in</button>
+                    </li>
+                    <li class="sign">
+                        <button class="signbn" id="signup">Sign up</button>
+                    </li>
+                </ul>
+            </div>-->
+            <div class="titlechange">
+                <div class="titlelist">
+                    <span class="title-ch">
+                        <input type="text" id="title-ch" class="title-in" maxlength="6" placeholder="Add Word with Todo Title" id="titlemod-in">
+                    </span>
+                    <span class="title-ch">
+                        <button class="title-bn" id="changebn">Change</button>
+                    </span>
+                </div>
+            </div>
+<!--           <div class="logout">
+                <button class="logoutbn" id="loginbn">Log Out</button>
+            </div>-->
+        </div>
+        <script src="progressbar.js"></script>
+        <script src="main.js"></script>
+        <script src="settingpage.js"></script>
+        <script src="Todo_Input.js"></script>
+        <script src="titleNameAdd.js"></script>
+    </body>
+</html>

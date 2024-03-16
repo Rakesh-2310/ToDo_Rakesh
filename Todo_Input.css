@@ -1,0 +1,45 @@
+.inputform{
+    position: absolute;
+    display:flex;
+    top: 30vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsla(160, 90%, 88%, 0.78);
+    width: 420px;
+    height: 7vh;
+    border-radius: 1.5vh;
+    border: 1px solid rgb(0, 138, 138);
+}
+
+.formtodo input[type="text"], .addbn{
+    background: none;
+    border:none;
+    height: 7vh;
+}
+
+.formtodo input[type="text"]{
+    width: 332px;
+    margin:0 10px 0 15px;
+    padding:2px 0;
+    outline: none;
+    overflow: auto;
+}
+
+.addbn{
+    width: 52px;
+    margin:0 10px 0 0px;
+    padding:2px 15px 0 0;
+    cursor: pointer;
+}
+
+.inbtwln{
+    border: 1px solid rgb(0, 138, 138);
+    height: 7vh;
+    margin: 0 15px 0 0;
+    cursor: pointer;
+}
+ .formbutton:hover{
+    background-color: rgb(0, 138, 138);
+    border-radius:1.5vh;
+    transition: 0.5s;
+}
