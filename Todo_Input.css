@@ -43,3 +43,45 @@
     border-radius:1.5vh;
     transition: 0.5s;
 }
+
+@media screen and (max-width: 480px) {
+    .inputform {    
+        position: absolute;
+        display:flex;
+        top: 30vh;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: hsla(160, 90%, 88%, 0.78);
+        width: 336px;
+        height: 7vh;
+        border-radius: 1.5vh;
+        border: 1px solid rgb(0, 138, 138);
+    }
+    .formtodo input[type="text"], .addbn{
+        background: none;
+        border:none;
+        height: 7vh;
+    }
+    
+    .formtodo input[type="text"]{
+        width: 266px;
+        margin:0 8px 0 12px;
+        padding:2px 0;
+        outline: none;
+        overflow: auto;
+    }
+    
+    .addbn{
+        width: 42px;
+        margin:0 8px 0 0px;
+        padding:2px 12px 0 0;
+        cursor: pointer;
+    }
+    
+    .inbtwln{
+        border: 1px solid rgb(0, 138, 138);
+        height: 7vh;
+        margin: 0 12px 0 0;
+        cursor: pointer;
+    }
+}

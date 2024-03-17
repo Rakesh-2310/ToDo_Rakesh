@@ -60,7 +60,7 @@ function createdivcontainer(todoCount,inputstoreDivId,input){
                   <ul class="actionlist">
                       <li class="actionbox">
                           <button class="actionboxbn" id = "finishButton${todoCount}" >
-                            <img src="/finish.png" style="width:25px;height:25px;" id = "finishImg${todoCount}" onclick="finishAction(event)">
+                            <img src="/finish.png" style="width:100%;height:100%;" id = "finishImg${todoCount}" onclick="finishAction(event)">
                           </button>
                       </li>
                       <li class="actionbox" id = "deleteButton${todoCount}">
@@ -217,9 +217,9 @@ document.getElementById('btn-Img-search').addEventListener("click",() => {
     document.getElementById('searchContainer').style.display = "flex";
 })
 
-function searchBarText() {
-    document.getElementById("searchBarBtn").style.backgroundColor = "rgb(0, 138, 138)";
-    let searchInput = document.getElementById("searchBar").value.trim().toLowerCase();
+document.getElementById("searchBar").addEventListener("input",() => {
+    //document.getElementById("searchBarBtn").style.backgroundColor = "rgb(0, 138, 138)";
+    let searchInput = document.getElementById("searchBar").value.toLowerCase();
     let listElement = document.getElementsByTagName("li");
 
     for (let i = 0; i < listElement.length; i++) {
@@ -234,8 +234,7 @@ function searchBarText() {
             }
         }
     }
-    document.getElementById("searchBar").value = "";
-}
+})
 
 function resetSearchBar() {
     let listElement = document.getElementsByTagName("li");
@@ -246,5 +245,5 @@ function resetSearchBar() {
     }
     document.getElementById('title-search').style.display = "flex";
     document.getElementById('searchContainer').style.display = "none";
-    document.getElementById("searchBarBtn").style.background = "none";
+    //document.getElementById("searchBarBtn").style.background = "none";
 }

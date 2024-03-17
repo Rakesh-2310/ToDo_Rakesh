@@ -25,7 +25,7 @@ function titleChange(input) {
         }
         titleStore.style.fontWeight = "bold";
         titleStore.style.color ="inherit";
-        titleStore.style.fontSize = "2rem";
+        titleStore.style.fontSize = "1.5rem";
         titleInput.value = "";
     }
 }

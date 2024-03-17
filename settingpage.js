@@ -5,7 +5,7 @@ let count = 0;
     if (count === 0){
         settingButton.style.transform = "rotate(-180deg)"; 
         settingButton.style.transition = "0.5s";
-        settingPage.style.display = "block";
+        settingPage.style.display = "flex";
         count =1;
     }
     else {
