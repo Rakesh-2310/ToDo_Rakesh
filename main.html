@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="/Todo_container.css">
     </head>
     <body>
+        <!--headcontainer div element for to hold the too title and setting things-->
         <div class="headcontainer">
             <div class="conhl">
                 <ul class="headerlist">
@@ -29,6 +30,7 @@
                 </ul>
             </div>
         </div>
+        <!--inputform div element for user interacion like input from user to add in storage container(storagecon div element)-->
         <div class="inputform">
             <span class="formtodo">
                 <form>
@@ -41,7 +43,9 @@
                     <span class="inbtwln"></span>Add</button>
                 </span>
         </div>
+        <!--storage container as storagecon div element which is used for storing the many element like header element for storage container and many todo's-->
         <div class="storagecon" id="storagecon">
+            <!--inputtoolst div element for  header element for storage container and search the todo-->
             <div class="inputtoolst" id="inputtoolst">
                 <ul class="inputtool">
                     <li class="boxtool">Si.no</li>
@@ -54,6 +58,7 @@
                                 </button>
                             </li>
                         </ul>
+                        <!--below is for search the todo's content and once search done can reset this to back to normal-->
                         <div class="searchContainer" id="searchContainer" style="display: none;">
                             <input class="searchBar" type="text" id = "searchBar" name="searchBar" placeholder="Search ToDO From List">
                             <button id = "searchBarBtn" class = "searchBarBtn">
@@ -69,16 +74,8 @@
                 </ul>
             </div>
         </div>
+        <!--settingpage now only for title change in headcontainer-->
         <div class="settingpage" id="settingpage">
-<!--            <div class="signs">
-                <ul class="signslist">
-                    <li class="sign">
-                        <button class="signbn" id="singin">Sign in</button>
-                    </li>
-                    <li class="sign">
-                        <button class="signbn" id="signup">Sign up</button>
-                    </li>
-                </ul>
             </div>-->
             <div class="titlechange">
                 <div class="titlelist">
@@ -90,14 +87,11 @@
                     </span>
                 </div>
             </div>
-<!--           <div class="logout">
-                <button class="logoutbn" id="loginbn">Log Out</button>
-            </div>-->
         </div>
-        <script src="progressbar.js"></script>
-        <script src="main.js"></script>
-        <script src="settingpage.js"></script>
-        <script src="Todo_Input.js"></script>
-        <script src="titleNameAdd.js"></script>
+        <script src="/progressbar.js"></script>
+        <script src="/main.js"></script>
+        <script src="/settingpage.js"></script>
+        <script src="/Todo_Input.js"></script>
+        <script src="/titleNameAdd.js"></script>
     </body>
 </html>
