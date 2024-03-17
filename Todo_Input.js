@@ -100,8 +100,6 @@ function progressBarStyle(progressBar,progress) {
 function updateProgressBar(event) {
     const input = event.target;
     const inputIdNo = (input.getAttribute("id")).slice(11)
-    todoprogressdata[parseInt(inputIdNo)-1] = input.value;
-    localStorage.setItem('todoprogressdata', JSON.stringify(todoprogressdata));
     const progressId = "progressbar"+(input.getAttribute("id")).slice(11);
     const progressBar = document.getElementById(progressId);
   
@@ -112,6 +110,9 @@ function updateProgressBar(event) {
     else if (progress > 100) {
         input.value = progress = 100;
     }
+    
+    todoprogressdata[parseInt(inputIdNo)-1] = input.value;
+    localStorage.setItem('todoprogressdata', JSON.stringify(todoprogressdata));
 
     statusbar(progressBar,progress,inputIdNo)
 }
