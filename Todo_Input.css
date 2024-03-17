@@ -46,42 +46,64 @@
 
 @media screen and (max-width: 480px) {
     .inputform {    
-        position: absolute;
-        display:flex;
         top: 30vh;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color: hsla(160, 90%, 88%, 0.78);
         width: 336px;
-        height: 7vh;
+        height: 6vh;
         border-radius: 1.5vh;
-        border: 1px solid rgb(0, 138, 138);
     }
     .formtodo input[type="text"], .addbn{
-        background: none;
-        border:none;
-        height: 7vh;
+        height: 6vh;
     }
     
     .formtodo input[type="text"]{
         width: 266px;
         margin:0 8px 0 12px;
         padding:2px 0;
-        outline: none;
-        overflow: auto;
     }
     
     .addbn{
         width: 42px;
         margin:0 8px 0 0px;
         padding:2px 12px 0 0;
-        cursor: pointer;
     }
     
     .inbtwln{
         border: 1px solid rgb(0, 138, 138);
-        height: 7vh;
+        height: 1vh;
         margin: 0 12px 0 0;
-        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .inputform {    
+        top: 30vh;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        height: 6vh;
+        border-radius: 1.5vh;
+    }
+    .formtodo input[type="text"], .addbn{
+        height: 6vh;
+    }
+    
+    .formtodo input[type="text"]{
+        width: 236px;
+        margin:0 8px 0 12px;
+        padding:2px 0;
+    }
+    
+    .addbn{
+        width: 42px;
+        margin:0;
+        padding:2px 12px 0 0;
+    }
+    
+    .inbtwln{
+        border: 1px solid rgb(0, 138, 138);
+        height: 1vh;
+        margin: 0 6px 0 0;
     }
 }
