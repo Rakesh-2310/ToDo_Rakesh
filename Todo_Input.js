@@ -22,19 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-/*window.onload = () => {
-    let todoarray = [];
-    todoarray = JSON.parse(localStorage.getItem('todoListarray')) || [];
-
-    for(let arrayindex = 0; arrayindex< todoarray.length; arrayindex++){
-        let todoarrayinput = todoarray[arrayindex];
-        let inpStoreDivId = "inputstore"+(arrayindex+1)
-        console.log(todoarrayinput)
-        console.log(inpStoreDivId)
-        createdivcontainer((arrayindex+1),inpStoreDivId,todoarrayinput)
-    }
-}*/
-
 inputButton.addEventListener('click', () => {
   const input = inputForm.value.trim();
   if (input !== "") {
@@ -73,12 +60,12 @@ function createdivcontainer(todoCount,inputstoreDivId,input){
                   <ul class="actionlist">
                       <li class="actionbox">
                           <button class="actionboxbn" id = "finishButton${todoCount}" >
-                            <img src="/Download/finish.png" style="width:25px;height:25px;" id = "finishImg${todoCount}" onclick="finishAction(event)">
+                            <img src="/finish.png" style="width:25px;height:25px;" id = "finishImg${todoCount}" onclick="finishAction(event)">
                           </button>
                       </li>
                       <li class="actionbox" id = "deleteButton${todoCount}">
                           <button class="actionboxbn">
-                            <img src="/Download/delete.png" style="width:30px;height:25px;"  id = "deleteImg${todoCount}" onclick="deleteAction(event)">
+                            <img src="/delete.png" style="width:30px;height:25px;"  id = "deleteImg${todoCount}" onclick="deleteAction(event)">
                           </button>
                       </li>
                   </ul>
@@ -147,6 +134,8 @@ function statusbar(progressBar,progress,inputIdNo) {
     }
     else{
         inputStore.style.opacity = "1";
+        finishElement.style.background = "none";
+        finishBoolean[indexNumber-1] = 0;
     }
 }
 
@@ -259,9 +248,3 @@ function resetSearchBar() {
     document.getElementById('searchContainer').style.display = "none";
     document.getElementById("searchBarBtn").style.background = "none";
 }
-
-
-/*document.getElementById('btn-Img-search').addEventListener("click",() => {
-    document.getElementById('title-search').style.display = "none";
-    document.getElementById('searchContainer').style.display = "inline-block";
-})*/
